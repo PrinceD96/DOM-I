@@ -46,6 +46,7 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
+//-------------------------------TASK-1-and-2-------------------------------------
 //-------------------------------HEADER-------------------------------------------
 let navBar = document.querySelector("header nav");
 let navItem1 = document.querySelector("header nav a:nth-child(1)");
@@ -77,7 +78,7 @@ let ctaImg = document.querySelector("#cta-img");
 ctaImg.src = siteContent["cta"]["img-src"];
 
 //-------------------------------MAIN-CONTENT-----------------------------------
-//-------------------------------TOP-CONTENT-----------------------------------
+//-------------------------------TOP-CONTENT------------------------------------
 let featuresH4 = document.querySelector(".top-content .text-content:nth-child(1) h4");
 featuresH4.textContent = siteContent["main-content"]["features-h4"];
 
@@ -90,7 +91,7 @@ aboutH4.textContent = siteContent["main-content"]["features-h4"];
 let aboutContent = document.querySelector(".top-content .text-content:nth-child(2) p");
 aboutContent.textContent = siteContent["main-content"]["about-content"];
 
-//-------------------------------MIDDLE-IMG-----------------------------------
+//-------------------------------MIDDLE-IMG--------------------------------------
 let midImg = document.querySelector("#middle-img");
 midImg.src = siteContent["main-content"]["middle-img-src"];
 
@@ -113,7 +114,7 @@ visionH4.textContent = siteContent["main-content"]["vision-h4"];
 let visionContent = document.querySelector(".bottom-content .text-content:nth-child(3) p");
 visionContent.textContent = siteContent["main-content"]["vision-content"];
 
-//-------------------------------CONTACT-----------------------------------
+//-------------------------------CONTACT----------------------------------------
 let contacth4 = document.querySelector(".contact h4");
 contacth4.textContent = siteContent["contact"]["contact-h4"];
 
@@ -126,6 +127,24 @@ contactP2.textContent = siteContent["contact"]["phone"];
 let contactP3 = document.querySelector(".contact p:nth-child(4)");
 contactP3.textContent = siteContent["contact"]["email"];
 
-//-------------------------------FOOTER-----------------------------------
+//-------------------------------FOOTER-----------------------------------------
 let footerContent = document.querySelector("footer p");
 footerContent.textContent = siteContent["footer"]["copyright"];
+
+//-------------------------------TASK-3-----------------------------------------
+let navItems = document.querySelectorAll("header nav a");
+navItems.forEach(function(item) {
+  item.style.color = "green";
+});
+
+let home = document.createElement("a");
+home.textContent = "Home";
+navBar.prepend(home);
+home.style.color = "green";
+
+let join = document.createElement("a");
+join.textContent = "Join";
+navBar.appendChild(join);
+join.style.color = "green";
+
+//-------------------------------STRETCH-GOALS----------------------------------
