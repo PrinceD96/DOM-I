@@ -148,3 +148,12 @@ navBar.appendChild(join);
 join.style.color = "green";
 
 //-------------------------------STRETCH-GOALS----------------------------------
+let h4s = document.querySelectorAll("h4");
+h4s.forEach(function(h4) {
+  h4.style.color = "green";
+});
+
+ctaBtn.style.backgroundColor = "white";
+ctaBtn.style.color = "green";
+
+footerContent.style.color = "green";
